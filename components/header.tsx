@@ -58,7 +58,7 @@ export function Header() {
             <Link href="#showcase" className="text-sm text-foreground hover:text-primary transition-colors">
               Showcase
             </Link>
-            <Link href="#pricing" className="text-sm text-foreground hover:text-primary transition-colors">
+            <Link href="/pricing" className="text-sm text-foreground hover:text-primary transition-colors">
               Pricing
             </Link>
             <Link href="#faq" className="text-sm text-foreground hover:text-primary transition-colors">

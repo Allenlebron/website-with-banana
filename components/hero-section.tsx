@@ -1,6 +1,16 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
+  const scrollToEditor = () => {
+    document.getElementById("editor")?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  const scrollToShowcase = () => {
+    document.getElementById("showcase")?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <section className="pt-32 pb-20 px-4">
       <div className="container mx-auto max-w-6xl">
@@ -25,10 +35,10 @@ export function HeroSection() {
           </p>
 
           <div className="flex items-center justify-center gap-4 pt-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" onClick={scrollToEditor}>
               Start Editing
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" onClick={scrollToShowcase}>
               View Examples
             </Button>
           </div>
